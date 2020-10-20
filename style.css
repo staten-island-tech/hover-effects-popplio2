@@ -22,6 +22,7 @@
     margin: 1rem auto;
     font-size: 2rem;
     border-radius: 5rem;
+    transition: all 0.3s
 }
 
 .btn-red {
@@ -30,5 +31,5 @@
 }
 
 .btn:hover {
-    transform: scale(2);
+    transform: scale(1.25);
 }
