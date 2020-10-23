@@ -1,0 +1,187 @@
+@import "_variables2.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+img {
+    width: 100vw;
+    height: 100vh;
+}
+.body{
+    display:flex;
+    align-content:flex-start;
+}    
+#nav-bar{
+    text-align:right;
+    width:100vw;
+    background-color:color(blackk);
+    padding: 1rem;
+    z-index: 1;
+    position: fixed;
+}
+#nav-bar ul{
+    list-style: none;
+}
+#nav-bar li{
+    display:inline-block;
+    font-family: $tfont;
+    transition: all 0.2s;
+}
+#nav-bar a{
+    color:color(yelloww);
+    text-decoration:none;
+    font-size:1.75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+#nav-bar li:hover {
+    background-color: color(bluee);
+}
+.container {
+    position: relative;
+    width: 100rem;
+    left: 5rem;
+    bottom: 50rem;
+}
+#header {
+    position: absolute;
+    color: color(yelloww);
+    font-family: $hfont;
+    font-size: 10rem;
+    line-height: 9rem;
+    top: 0;
+}
+#blurb {
+    position: absolute;
+    color: #fff;
+    font-family: $tfont;
+    font-size: 1.75rem;
+    top: 16rem;
+    letter-spacing: .1rem;
+}
+.btn,
+.btn:link, 
+.btn:visited {
+    text-decoration: none;
+    padding: 1.25rem 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: $tfont;
+    font-weight: 500;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    top: 24rem;
+    position: absolute;
+}
+.btn:hover {
+    transform: translateY(-1rem);
+}
+#musicbtn {
+    border-radius: 10rem;
+    background-color: color(yelloww);
+    color: color(blackk);
+}
+#musicbtn:hover {
+    box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.5);
+}
+#memberbtn {
+    color: color(yelloww);
+    border: color(yelloww) dashed .25rem;
+    border-radius: 10rem;
+    margin-left: 19.5rem;
+    background-color: none;
+}
+#memberbtn:hover {
+    border: color(yelloww) double .7rem;
+}
+#contactbtn {
+    color: color(yelloww);
+    margin-left: 38rem;
+}
+#contactbtn:hover {
+    letter-spacing: .5rem;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+#memberbox {
+    height: 100vh;
+    width: 100vw;
+    background-color: #251733;
+    margin-top: -3.4rem;
+    padding-top: 2rem;
+}
+
+.title {
+    color: color(yelloww);
+    font-size: 5rem;
+    font-family: $hfont;
+    padding: 5rem;
+    padding-bottom: 7rem;
+}
+#imagebox {
+    display: flex;
+    justify-content: center;
+}
+.image-whole {
+    position: relative;
+    bottom: 10rem;
+    display: inline;
+    float: left;
+}
+.img-img {
+    width: 32rem;
+    height: 30rem;
+    border-radius: 3rem;
+}
+.img-wrap {
+    position: relative;
+    width: 32rem;
+    height: 30rem;
+    padding: 5rem;
+}
+.img-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: color(yelloww);
+    font-family: $tfont;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    width: 28rem;
+    background-color: rgba(19, 33, 43, 0.8);
+    padding: 2rem;
+    margin: 5rem;
+    border-radius: 3rem;
+    line-height: 130%;
+}
+.img-wrap:hover .img-info {
+    visibility: visible;
+    opacity: 1;
+}
+.img-wrap:hover .img-img {
+    filter: grayscale;
+}
+.img-title {
+    position: absolute;
+    top: 36rem;
+    left: 5rem;
+    font-family: $hfont;
+    font-size: 3rem;
+    color: color(yelloww);
+    text-align: center;
+}
+.img-role {
+    position: absolute;
+    top: 41rem;
+    left: 5rem;
+    font-family: $tfont;
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}

@@ -1,0 +1,237 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#nav-bar {
+  text-align: right;
+  width: 100vw;
+  background-color: #13212b;
+  padding: 1rem;
+  z-index: 1;
+  position: fixed;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar li {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#nav-bar a {
+  color: #ffe917;
+  text-decoration: none;
+  font-size: 1.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+#nav-bar li:hover {
+  background-color: #00547A;
+}
+
+.container {
+  position: relative;
+  width: 100rem;
+  left: 5rem;
+  bottom: 50rem;
+}
+
+#header {
+  position: absolute;
+  color: #ffe917;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10rem;
+  line-height: 9rem;
+  top: 0;
+}
+
+#blurb {
+  position: absolute;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  top: 16rem;
+  letter-spacing: .1rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.25rem 3rem;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  border-radius: 10rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 24rem;
+  position: absolute;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+#musicbtn {
+  border-radius: 10rem;
+  background-color: #ffe917;
+  color: #13212b;
+}
+
+#musicbtn:hover {
+  -webkit-box-shadow: 0 1rem 2rem rgba(255, 233, 23, 0.5);
+          box-shadow: 0 1rem 2rem rgba(255, 233, 23, 0.5);
+}
+
+#memberbtn {
+  color: #ffe917;
+  border: #ffe917 dashed 0.25rem;
+  border-radius: 10rem;
+  margin-left: 19.5rem;
+  background-color: none;
+}
+
+#memberbtn:hover {
+  border: #ffe917 double 0.7rem;
+}
+
+#contactbtn {
+  color: #ffe917;
+  margin-left: 38rem;
+}
+
+#contactbtn:hover {
+  letter-spacing: .5rem;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#memberbox {
+  height: 100vh;
+  width: 100vw;
+  background-color: #251733;
+  margin-top: -3.4rem;
+  padding-top: 2rem;
+}
+
+.title {
+  color: #ffe917;
+  font-size: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5rem;
+  padding-bottom: 7rem;
+}
+
+#imagebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-whole {
+  position: relative;
+  bottom: 10rem;
+  display: inline;
+  float: left;
+}
+
+.img-img {
+  width: 32rem;
+  height: 30rem;
+  border-radius: 3rem;
+}
+
+.img-wrap {
+  position: relative;
+  width: 32rem;
+  height: 30rem;
+  padding: 5rem;
+}
+
+.img-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffe917;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .2s, visibility .2s;
+  transition: opacity .2s, visibility .2s;
+  width: 28rem;
+  background-color: rgba(19, 33, 43, 0.8);
+  padding: 2rem;
+  margin: 5rem;
+  border-radius: 3rem;
+  line-height: 130%;
+}
+
+.img-wrap:hover .img-info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img-wrap:hover .img-img {
+  -webkit-filter: grayscale;
+          filter: grayscale;
+}
+
+.img-title {
+  position: absolute;
+  top: 36rem;
+  left: 5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: #ffe917;
+  text-align: center;
+}
+
+.img-role {
+  position: absolute;
+  top: 41rem;
+  left: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+/*# sourceMappingURL=style2.css.map */
