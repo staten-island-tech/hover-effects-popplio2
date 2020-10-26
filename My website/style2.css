@@ -28,7 +28,6 @@ img {
   text-align: right;
   width: 100vw;
   background-color: #13212b;
-  padding: 1rem;
   z-index: 1;
   position: fixed;
 }
@@ -42,14 +41,15 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  padding: 1rem;
 }
 
 #nav-bar a {
   color: #ffe917;
   text-decoration: none;
   font-size: 1.75rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 #nav-bar li:hover {
@@ -194,17 +194,29 @@ a {
 
 #musicfineprint {
   font-size: 1rem;
-  padding-top: 2rem;
+  padding-top: .5rem;
+}
+
+#sample {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #ffe917;
 }
 
 .musicimg {
   position: absolute;
-  width: 45vw;
-  height: 30vw;
+  width: 60rem;
+  height: 40rem;
   float: right;
   right: 5rem;
   top: 11rem;
   border-radius: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.youtube {
+  padding-left: 5rem;
 }
 
 #memberbox {
@@ -227,7 +239,7 @@ a {
 
 .image-whole {
   position: relative;
-  bottom: 10rem;
+  bottom: 8rem;
   display: inline;
   float: left;
 }
@@ -236,6 +248,8 @@ a {
   width: 32rem;
   height: 30rem;
   border-radius: 3rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .img-wrap {
@@ -243,6 +257,11 @@ a {
   width: 32rem;
   height: 30rem;
   padding: 5rem;
+  border-left: #ffe917 solid 0.25rem;
+}
+
+#jeffwrap {
+  border-right: #ffe917 solid 0.25rem;
 }
 
 .img-info {
@@ -255,8 +274,8 @@ a {
   font-size: 1.5rem;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity .2s, visibility .2s;
-  transition: opacity .2s, visibility .2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 28rem;
   background-color: rgba(19, 33, 43, 0.8);
   padding: 2rem;
@@ -270,9 +289,14 @@ a {
   opacity: 1;
 }
 
+.img-wrap:hover .img-img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .img-title {
   position: absolute;
-  top: 36rem;
+  top: 38rem;
   left: 5rem;
   font-family: "Times New Roman", Times, serif;
   font-size: 3rem;
@@ -282,7 +306,7 @@ a {
 
 .img-role {
   position: absolute;
-  top: 41rem;
+  top: 43rem;
   left: 5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.75rem;

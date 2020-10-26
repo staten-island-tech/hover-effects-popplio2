@@ -15,7 +15,6 @@ img {
     text-align:right;
     width:100vw;
     background-color:color(blackk);
-    padding: 1rem;
     z-index: 1;
     position: fixed;
 }
@@ -26,13 +25,14 @@ img {
     display:inline-block;
     font-family: $tfont;
     transition: all 0.2s;
+    padding: 1rem;
 }
 #nav-bar a{
     color:color(yelloww);
     text-decoration:none;
     font-size:1.75rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 #nav-bar li:hover {
     background-color: color(bluee);
@@ -147,16 +147,25 @@ a {
 }
 #musicfineprint {
     font-size: 1rem;
-    padding-top: 2rem;
+    padding-top: .5rem;
+}
+#sample {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: color(yelloww);
 }
 .musicimg {
     position: absolute;
-    width: 45vw;
-    height: 30vw;
+    width: 60rem;
+    height: 40rem;
     float: right;
     right: 5rem;
     top: 11rem;
     border-radius: 2rem;
+    transition: all 0.3s;
+}
+.youtube {
+    padding-left: 5rem;
 }
 #memberbox{
     background-color: #597284;
@@ -172,7 +181,7 @@ a {
 }
 .image-whole {
     position: relative;
-    bottom: 10rem;
+    bottom: 8rem;
     display: inline;
     float: left;
 }
@@ -180,12 +189,17 @@ a {
     width: 32rem;
     height: 30rem;
     border-radius: 3rem;
+    transition: all 0.3s;
 }
 .img-wrap {
     position: relative;
     width: 32rem;
     height: 30rem;
     padding: 5rem;
+    border-left: color(yelloww) solid .25rem;
+}
+#jeffwrap {
+    border-right: color(yelloww) solid .25rem;
 }
 .img-info {
     position: absolute;
@@ -197,7 +211,7 @@ a {
     font-size: 1.5rem;
     visibility: hidden;
     opacity: 0;
-    transition: opacity .2s, visibility .2s;
+    transition: all 0.3s;
     width: 28rem;
     background-color: rgba(19, 33, 43, 0.8);
     padding: 2rem;
@@ -209,9 +223,12 @@ a {
     visibility: visible;
     opacity: 1;
 }
+.img-wrap:hover .img-img {
+    filter: grayscale(100%);
+}
 .img-title {
     position: absolute;
-    top: 36rem;
+    top: 38rem;
     left: 5rem;
     font-family: $hfont;
     font-size: 3rem;
@@ -220,7 +237,7 @@ a {
 }
 .img-role {
     position: absolute;
-    top: 41rem;
+    top: 43rem;
     left: 5rem;
     font-family: $tfont;
     font-size: 1.75rem;
