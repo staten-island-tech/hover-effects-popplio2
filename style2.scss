@@ -8,13 +8,13 @@ img {
     height: 100vh;
 }
 .body{
-    display:flex;
-    align-content:flex-start;
+    display: flex;
+    align-content: flex-start;
 }    
 #nav-bar{
-    text-align:right;
-    width:100vw;
-    background-color:color(blackk);
+    text-align: right;
+    width: 100vw;
+    background-color: color(blackk);
     z-index: 1;
     position: fixed;
 }
@@ -22,16 +22,16 @@ img {
     list-style: none;
 }
 #nav-bar li{
-    display:inline-block;
+    display: inline-block;
     font-family: $tfont;
     transition: all 0.2s;
     padding: 1rem;
     border-radius: 1.5rem;
 }
 #nav-bar a{
-    color:color(yelloww);
-    text-decoration:none;
-    font-size:1.75rem;
+    color: color(yelloww);
+    text-decoration: none;
+    font-size: 1.75rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -211,7 +211,7 @@ a {
     opacity: 0;
     transition: all 0.3s;
     width: 28rem;
-    background-color: rgba(19, 33, 43, 0.8);
+    background-color: #13212b;
     padding: 2rem;
     margin: 5rem;
     border-radius: 3rem;
