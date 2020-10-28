@@ -1,0 +1,261 @@
+@import "_variables2.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+img {
+    width: 100vw;
+    height: 100vh;
+}
+.body{
+    display:flex;
+    align-content:flex-start;
+}    
+#nav-bar{
+    text-align:right;
+    width:100vw;
+    background-color:color(blackk);
+    z-index: 1;
+    position: fixed;
+}
+#nav-bar ul{
+    list-style: none;
+}
+#nav-bar li{
+    display:inline-block;
+    font-family: $tfont;
+    transition: all 0.2s;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+#nav-bar a{
+    color:color(yelloww);
+    text-decoration:none;
+    font-size:1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+#nav-bar li:hover{
+    background-color: color(bluee);
+}
+#nav-bar li:hover a {
+    color: #ffcc5e;
+}
+#container {
+    position: relative;
+    width: 100rem;
+    left: 5rem;
+    bottom: 50rem;
+}
+#header {
+    position: absolute;
+    color: color(yelloww);
+    font-family: $hfont;
+    font-size: 10rem;
+    line-height: 9rem;
+    top: 0;
+}
+#blurb {
+    position: absolute;
+    color: #fff;
+    font-family: $tfont;
+    font-size: 1.75rem;
+    top: 16rem;
+    letter-spacing: .1rem;
+}
+#btnbox {
+    position: relative;
+    display: inline;
+    top: 24rem;
+    left: -20.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 78rem;
+}
+.btn,
+.btn:link, 
+.btn:visited {
+    text-decoration: none;
+    padding: 1.25rem 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: $tfont;
+    font-weight: 500;
+    border-radius: 10rem;
+    transition: all 0.3s;
+    position: absolute;
+    display: inline;
+}
+#musicbtn {
+    border-radius: 10rem;
+    background-color: color(yelloww);
+    color: color(blackk);
+}
+#musicbtn:hover {
+    box-shadow: 0 1rem 2rem rgba(color(yelloww), 0.5);
+    transform: translateY(-1rem);
+}
+#memberbtn {
+    color: color(yelloww);
+    border: color(yelloww) dashed .25rem;
+    border-radius: 10rem;
+    background-color: none;
+    padding: 1rem 2.5rem;
+}
+#memberbtn:hover {
+    border: color(yelloww) outset .4rem;
+    transform: translateX(-.1rem) translateY(-1.75rem);
+}
+#contactbtn {
+    text-decoration: underline;
+    text-underline-offset: .1rem;
+    color: color(yelloww);
+    padding-right: 2rem;
+}
+#contactbtn:hover {
+    letter-spacing: .25rem;
+    transform: translateX(-.5rem) translateY(-1.25rem);
+}
+a {
+    text-decoration: none;
+}
+.pagebox {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 1rem;
+}
+#musicbox {
+    background-color: color(bluee);
+    position: relative;
+}
+.title {
+    color: color(yelloww);
+    font-size: 5rem;
+    font-family: $hfont;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+}
+.pageblurb {
+    font-size: 1.75rem;
+    font-family: $tfont;
+    color: #fff;
+    padding-left: 5rem;
+    padding-right: 50vw;
+}
+#musicfineprint {
+    font-size: 1rem;
+    padding-top: .5rem;
+}
+#sample {
+    padding-top: 11rem;
+    padding-bottom: 1rem;
+    color: color(yelloww);
+}
+.youtube {
+    padding-left: 5rem;
+    padding-bottom: 5rem;
+}
+.musicimg {
+    position: absolute;
+    top: 11rem;
+    right: 5rem;
+    width: 60rem;
+    height: 40rem;
+    float: right;
+    border-radius: 2rem;
+}
+#memberbox{
+    background-color: #2e495c;
+}
+#membertitle {
+    padding-bottom: 7rem;
+}
+#imagebox {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.image-whole {
+    position: relative;
+    bottom: 8rem;
+    display: inline;
+    float: left;
+}
+.img-img {
+    width: 32rem;
+    height: 30rem;
+    border-radius: 3rem;
+    transition: all 0.3s;
+}
+.img-wrap {
+    position: relative;
+    width: 32rem;
+    height: 30rem;
+    padding: 5rem;
+    border-left: color(yelloww) solid .25rem;
+}
+#jeffwrap {
+    border-right: color(yelloww) solid .25rem;
+}
+.img-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: color(yelloww);
+    font-family: $tfont;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    width: 28rem;
+    background-color: rgba(19, 33, 43, 0.8);
+    padding: 2rem;
+    margin: 5rem;
+    border-radius: 3rem;
+    line-height: 130%;
+}
+.img-wrap:hover .img-info {
+    visibility: visible;
+    opacity: 1;
+}
+.img-wrap:hover .img-img {
+    filter: grayscale(100%);
+}
+.img-title {
+    position: absolute;
+    top: 38rem;
+    left: 5rem;
+    font-family: $hfont;
+    font-size: 3rem;
+    color: color(yelloww);
+    text-align: center;
+}
+.img-role {
+    position: absolute;
+    top: 43rem;
+    left: 5rem;
+    font-family: $tfont;
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+#contactbox {
+    background-color: color(bluee);
+    position: relative;
+}
+#contactblurb {
+    font-size: 2.5rem;
+}
+.contactimg {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    width: 60rem;
+    height: 40rem;
+    float: right;
+    border-radius: 2rem;
+}
